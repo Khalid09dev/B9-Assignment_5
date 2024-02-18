@@ -1,0 +1,32 @@
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul {
+        margin-bottom: 60px;
+        
+    }
+    .banner-section {
+        display: grid;
+        grid-template-columns: 1;
+    }
+    .bonus-part-banner {
+        flex-direction: column;
+    }
+    .best-offer {
+        flex-direction: column;
+    }
+    .all-offer {
+        flex-direction: column;
+    }
+    .greenline-ticket-fare {
+        display: grid;
+        flex-direction: column;
+    }
+}
