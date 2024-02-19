@@ -1,5 +1,5 @@
 function seatSelected() {
-    
+    /**ticket selecting functionality start */
     const availableSeat = document.getElementById('seat-left');
     const newSeat = Math.floor(availableSeat.innerText - 1);
     availableSeat.innerText = newSeat;
@@ -12,4 +12,12 @@ function seatSelected() {
 
     const seatSelected = document.getElementById('seat-selected');
     seatSelected.classList.add('text-[#1DD100]', 'font-medium');
+    /**ticket selecting functionalities end */
+
+    /**ticket pricing calculation section start */
+    const seatNum = document.getElementById('seat-num');
+    seatNum.innerText = 'A1';
+
+    const ticketPrice = document.getElementById('ticket-price');
+    ticketPrice.innerText = 550;
 }
