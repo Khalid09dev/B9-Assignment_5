@@ -20,4 +20,7 @@ function seatSelected() {
 
     const ticketPrice = document.getElementById('ticket-price');
     ticketPrice.innerText = 550;
+
+    const totalPrice = document.getElementById('total-price');
+    totalPrice.innerText = 550;
 }
