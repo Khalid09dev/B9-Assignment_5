@@ -32,8 +32,8 @@ function seatSelected() {
     const nextbtn = document.getElementById('next-btn');
     nextbtn.classList.remove('pointer-events-none');
 
+    window.alert('Site under Construction: you can buy only one seat. Without this issue everything is okay');
 }
-
 
 
 // single seat select 
@@ -60,6 +60,7 @@ function discount() {
         grandTotal.innerText = discountOff;
     }
     else{
-        console.log('congratulations you have to pay full');
+        window.alert('Your coupon is invalid');
+        // console.log('congratulations you have to pay full');
     }
 }

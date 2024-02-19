@@ -16,7 +16,7 @@ function seatSelecteda2() {
 
     /**ticket pricing calculation section start */
     const seatNum = document.getElementById('seat-num');
-    seatNum.innerText = 'A1';
+    seatNum.innerText = 'A2';
 
     const ticketPrice = document.getElementById('ticket-price');
     ticketPrice.innerText = 550;
@@ -32,6 +32,7 @@ function seatSelecteda2() {
     const nextbtn = document.getElementById('next-btn');
     nextbtn.classList.remove('pointer-events-none');
 
+    window.alert('Site under Construction: you can buy only one seat. Without this issue everything is okay');
 }
 
 // A2 end 
@@ -55,7 +56,7 @@ function seatSelecteda3() {
 
     /**ticket pricing calculation section start */
     const seatNum = document.getElementById('seat-num');
-    seatNum.innerText = 'A1';
+    seatNum.innerText = 'A3';
 
     const ticketPrice = document.getElementById('ticket-price');
     ticketPrice.innerText = 550;
@@ -71,6 +72,7 @@ function seatSelecteda3() {
     const nextbtn = document.getElementById('next-btn');
     nextbtn.classList.remove('pointer-events-none');
 
+    window.alert('Site under Construction: you can buy only one seat. Without this issue everything is okay');
 }
 // A3 end 
 
@@ -93,7 +95,7 @@ function seatSelecteda4() {
 
     /**ticket pricing calculation section start */
     const seatNum = document.getElementById('seat-num');
-    seatNum.innerText = 'A1';
+    seatNum.innerText = 'A4';
 
     const ticketPrice = document.getElementById('ticket-price');
     ticketPrice.innerText = 550;
@@ -109,6 +111,7 @@ function seatSelecteda4() {
     const nextbtn = document.getElementById('next-btn');
     nextbtn.classList.remove('pointer-events-none');
 
+    window.alert('Site under Construction: you can buy only one seat. Without this issue everything is okay');
 }
 // A4 end 
 
@@ -131,7 +134,7 @@ function seatSelectedb1() {
 
     /**ticket pricing calculation section start */
     const seatNum = document.getElementById('seat-num');
-    seatNum.innerText = 'A1';
+    seatNum.innerText = 'B1';
 
     const ticketPrice = document.getElementById('ticket-price');
     ticketPrice.innerText = 550;
@@ -147,6 +150,7 @@ function seatSelectedb1() {
     const nextbtn = document.getElementById('next-btn');
     nextbtn.classList.remove('pointer-events-none');
 
+    window.alert('Site under Construction: you can buy only one seat. Without this issue everything is okay');
 }
 // B1 end 
 
@@ -169,7 +173,7 @@ function seatSelectedb2() {
 
     /**ticket pricing calculation section start */
     const seatNum = document.getElementById('seat-num');
-    seatNum.innerText = 'A1';
+    seatNum.innerText = 'B2';
 
     const ticketPrice = document.getElementById('ticket-price');
     ticketPrice.innerText = 550;
@@ -185,6 +189,7 @@ function seatSelectedb2() {
     const nextbtn = document.getElementById('next-btn');
     nextbtn.classList.remove('pointer-events-none');
 
+    window.alert('Site under Construction: you can buy only one seat. Without this issue everything is okay');
 }
 
 // B2 end 
@@ -208,7 +213,7 @@ function seatSelectedb3() {
 
     /**ticket pricing calculation section start */
     const seatNum = document.getElementById('seat-num');
-    seatNum.innerText = 'A1';
+    seatNum.innerText = 'B3';
 
     const ticketPrice = document.getElementById('ticket-price');
     ticketPrice.innerText = 550;
@@ -224,6 +229,7 @@ function seatSelectedb3() {
     const nextbtn = document.getElementById('next-btn');
     nextbtn.classList.remove('pointer-events-none');
 
+    window.alert('Site under Construction: you can buy only one seat. Without this issue everything is okay');
 }
 
 // B3 end 
@@ -247,7 +253,7 @@ function seatSelectedb4() {
 
     /**ticket pricing calculation section start */
     const seatNum = document.getElementById('seat-num');
-    seatNum.innerText = 'A1';
+    seatNum.innerText = 'B4';
 
     const ticketPrice = document.getElementById('ticket-price');
     ticketPrice.innerText = 550;
@@ -263,6 +269,7 @@ function seatSelectedb4() {
     const nextbtn = document.getElementById('next-btn');
     nextbtn.classList.remove('pointer-events-none');
 
+    window.alert('Site under Construction: you can buy only one seat. Without this issue everything is okay');
 }
 
 // B4 end 
