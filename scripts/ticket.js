@@ -23,4 +23,43 @@ function seatSelected() {
 
     const totalPrice = document.getElementById('total-price');
     totalPrice.innerText = 550;
+
+    const enableCoupon = document.getElementById('coupon');
+    enableCoupon.removeAttribute('disabled');
+    const enableCpnBtn = document.getElementById('coupon-btn');
+    enableCpnBtn.removeAttribute('disabled');
+
+    const nextbtn = document.getElementById('next-btn');
+    nextbtn.classList.remove('pointer-events-none');
+
+}
+
+
+
+// single seat select 
+document.getElementById('seat-left-now').addEventListener('click', function() {
+    this.disabled = true;
+});
+// single seat select 
+
+
+function discount() {
+    let totalPrice = document.getElementById('total-price');
+    const price = totalPrice.innerText;
+    totalPrice = price;
+
+    const coupon = document.getElementById('coupon');
+    if(coupon.value === 'Couple20') {
+        const discountOff = totalPrice - (totalPrice / 100 * 20);
+        const grandTotal = document.getElementById('grand-total');
+        grandTotal.innerText = discountOff;
+    }
+    else if(coupon.value === 'NEW15') {
+        const discountOff = totalPrice - (totalPrice / 100 * 15);
+        const grandTotal = document.getElementById('grand-total');
+        grandTotal.innerText = discountOff;
+    }
+    else{
+        console.log('congratulations you have to pay full');
+    }
 }

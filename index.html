@@ -213,9 +213,9 @@
                         <div class="flex gap-16">
                             <div class="grid grid-cols-2 rounded-xl gap-y-6 gap-x-8">
                                 <div id="seat-left-now" onclick="seatSelected()" class="bg-[#F7F8F8] py-3 px-12 rounded-xl">A1</div>
-                                <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">A2</div>
-                                <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">B1</div>
-                                <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">B2</div>
+                                <div id="seat-left-now-a2" onclick="seatSelecteda2()" class="bg-[#F7F8F8] py-3 px-12 rounded-xl">A2</div>
+                                <div id="seat-left-now-b1" onclick="seatSelectedb1()" class="bg-[#F7F8F8] py-3 px-12 rounded-xl">B1</div>
+                                <div id="seat-left-now-b2" onclick="seatSelectedb2()" class="bg-[#F7F8F8] py-3 px-12 rounded-xl">B2</div>
                                 <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">C1</div>
                                 <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">C2</div>
                                 <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">D1</div>
@@ -235,10 +235,10 @@
                             </div>
     
                             <div class="grid grid-cols-2 gap-x-8 gap-y-6">
-                                <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">A3</div>
-                                <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">A4</div>
-                                <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">B3</div>
-                                <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">B4</div>
+                                <div id="seat-left-now-a3" onclick="seatSelecteda3()" class="bg-[#F7F8F8] py-3 px-12 rounded-xl">A3</div>
+                                <div id="seat-left-now-a4" onclick="seatSelecteda4()" class="bg-[#F7F8F8] py-3 px-12 rounded-xl">A4</div>
+                                <div id="seat-left-now-b3" onclick="seatSelectedb3()" class="bg-[#F7F8F8] py-3 px-12 rounded-xl">B3</div>
+                                <div id="seat-left-now-b4" onclick="seatSelectedb4()" class="bg-[#F7F8F8] py-3 px-12 rounded-xl">B4</div>
                                 <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">C3</div>
                                 <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">C4</div>
                                 <div class="bg-[#F7F8F8] py-3 px-12 rounded-xl">D3</div>
@@ -289,23 +289,23 @@
                         </div>
                         <div class="pb-6">
                             <div class="absolute">
-                                <input class="py-3 pl-[20px] pr-[80px] rounded-xl" type="text" placeholder="Have any coupon?" class=""> <button class="text-white inter text-base font-normal px-3 py-1 bg-[#1DD100] rounded-lg absolute right-3 top-2">Apply</button>
+                                <input id="coupon" disabled class="py-3 pl-[20px] pr-[80px] rounded-xl" type="text" placeholder="Have any coupon?" class=""> <button id="coupon-btn" disabled onclick="discount()" class="text-white inter text-base font-normal px-3 py-1 bg-[#1DD100] rounded-lg absolute right-3 top-2">Apply</button>
                             </div>
                         </div>
                         <div class="flex justify-between sticky pt-11 text-[#030712] inter text-base font-medium">
                             <h5>Grand Total</h5>
-                            <p>BDT 1100</p>
+                            <p>BDT <span id="grand-total">0</span></p>
                         </div>
                 
                     </div>
                     <form>
                         <h2 class="text-[#030712] inter text-base font-medium">Passenger Name*</h2>
                         <input class="py-3 px-20 mb-5 border-[1px] rounded-xl border-gray-300" type="text" placeholder="Enter you name" required>
-                        <h2 class="text-[#030712] inter text-base font-medium">Phone Number*</h2>
+                        <h2 class=" text-[#030712] inter text-base font-medium">Phone Number*</h2>
                         <input class="py-3 px-20 mb-5 border-[1px] rounded-xl border-gray-300" type="number" placeholder="Enter your phone number" required>
                         <h2 class="text-[#030712] inter text-base font-medium">Email ID</h2>
                         <input class="py-3 px-20 mb-5 border-[1px] rounded-xl border-gray-300" type="email" placeholder="Enter your email id"> <br>
-                        <button class="text-white raleway text-xl font-semibold px-[150px] py-3 bg-[#1DD100] rounded-2xl mb-6"><a target="_blank" href="./success.html">Next</a></button>
+                        <button  class=" text-white raleway text-xl font-semibold px-[150px] py-3 bg-[#1DD100] rounded-2xl mb-6"><a id="next-btn" target="_blank" class="pointer-events-none" href="./success.html">Next</a></button>
                     </form>
                     <div class="flex justify-between text-gray-400">
                         <p class="underline"><a href="#">Terms and conditions</a></p>
@@ -339,5 +339,6 @@
     </footer>
 
     <script src="./scripts/ticket.js"></script>
+    <script src="./scripts/utility.js"></script>
 </body>
 </html>
